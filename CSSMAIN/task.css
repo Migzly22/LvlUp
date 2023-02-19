@@ -14,124 +14,52 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem ;
+
+
 }
-.containertop > a:nth-child(1), .containertop > a:nth-child(3){
-    width: 3rem;    
-    text-align: center;
-    background: var(--m-text-secondary);
-}
-.containertop > a:nth-child(1):hover, .containertop > a:nth-child(3):hover{
-    background: var(--m-bg-main);
+.containertop span{
+    font-size: 1.5rem;
 }
 
 
-.Sortingbtn{
-    border: 0;
-    border-right: 1px solid var(--m-bg-main);
-}
-.Addbtn{
-    border: 0;
-    border-left: 1px solid var(--m-bg-main);
-}
-.containertop  i{
+.dropdown a i{
     margin: 0;
-    padding: 0; 
 }
+.dropdown-menu{
+    background-color: var(--m-text-secondary);
+    border: 1px solid var(--m-bg-main);
 
-
-.exp{
-    flex-grow: 1;
-    width: 100%;
 }
-
-
-.exp > div{
-    margin: 1rem;
-    font-weight: bold;
+.dropdown-item{
+    height: 2rem;
+    max-width: 20rem;
+    line-height: 2rem;
     font-size: 1rem;
 }
-
-.expcontainer{
-    height: 1rem;
-    border: 1px solid var(--m-bg-main);
-    border-radius: 25px;
-    overflow: hidden;
-}
-.expbar{
-    background-color:var(--m-bg-main)  ;
-    width: 20%; 
-    height: 100%;
+.dropdown-item span, .dropdown-item i{
+    font-size: .9rem;
 }
 
-
-
-
-
-.questtypes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.questtypes i{
-    margin: 0 0.3rem 0 0;
-}
-
-.questbox{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.questbox > li{
+.containerbotbtn{
     width: 100%;
-    max-height: 7.5rem;
-    margin-bottom: 1rem;
+    padding: 1rem 1rem;    
     display: flex;
-    overflow: hidden;
-
-
-    /* From https://css.glass */
-    background: rgba(160, 132, 220, 0.34);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(13.7px);
-    -webkit-backdrop-filter: blur(13.7px);
-    border: 1px solid rgba(160, 132, 220, 0.3);
+    justify-content: end;
+    align-items: center;
+}
+.containerbotbtn a{
+    border: 1px solid red;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    border: 1px solid var(--m-bg-main);
+    z-index: 1;
 }
 
-
-li > button{
-    background: var(--m-text-main);
-    width: 10%;
-    padding: 0;
-    margin: 0;
-    border: 0px;
-}
-li > button i{
-    margin: 0;
-}
-
-.questinfo{
-    padding: 0 1rem 1rem 1rem;    
-    width: 90%;
-}
-.qtitle{
-    font-size: 1.2rem;    
-}
-.qinfo{
-    font-style: italic;
-    text-align: justify;
-}
-
-
-
-li > button:hover{
-    background: var(--m-text-secondary);
-
-}
-
-
-.questbox > li:hover{
-    max-height: none;
+.containerbotbtn a:hover{
+    background-color: var(--m-text-secondary);
 }

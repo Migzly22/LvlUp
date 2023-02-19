@@ -29,6 +29,9 @@
         display: flex;
         flex-direction: column;
     }
+    .mainnav-item:last-child{
+        margin-right: auto;
+    }
 
     .mainbody > div{
         width: 100%;
@@ -40,24 +43,18 @@
         line-height: 5rem;
     }
 
-    .expcontainer{
-        width: 100%-1rem;
-    }
-    .exp span{
-        display: none;
-    }
 }
 
 @media only screen and (min-width:600px){
     main{
         margin-left: 5rem;
         transition: all 200ms ease;
-        padding: 0 1rem;
     }
     .mainnav{
         top:0;
         width: 5rem;
         height: 100dvh;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
     .mainnav:hover{
         width: 15rem;
@@ -68,6 +65,11 @@
     .mainnav:hover ~ main{
         margin-left: 15rem;
     }
+
+    .mainnav-item:last-child{
+        margin-top: auto;
+    }
+
     .mainbody{
         width: 100%;
         display: flex;
@@ -83,14 +85,5 @@
     .containertop{
         height: 5rem;
         line-height: 5rem;
-    }
-    .exp{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    .expcontainer{
-        width: 50%;
     }
 }

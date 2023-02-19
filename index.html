@@ -19,10 +19,13 @@
         <link rel="stylesheet" href="./CSSMAIN/task.css">
 
         <link rel="stylesheet" href="./CSSMAIN/responsive.css">
+<!--
+        <script src="./Fbase/credits.js" type="module" defer></script>
+-->
     </head>
     <body>
         
-        <nav class="mainnav shadow-lg">
+        <nav class="mainnav">
             <ul class="mainnav-nav">
                 <li class="logo">
                     <a href="" class="mainnav-link">
@@ -75,112 +78,50 @@
 
         <!--Contains the main content of page-->
         <main>
+
             <div class="containertop">
-                <a class="Sortingbtn">
-                        <i class="fa-solid fa-sort"></i>
-                </a>
-                <div class="exp">
-                    <div>
-                        <span class="levelnumbers">1</span>
-                    </div>
-                    <div class="expcontainer">
-                        <div class="expbar">
-    
-                        </div>
-                    </div>
-                    <div>
-                        <span class="levelnumbers">2</span>
-                    </div>  
-                </div>   
-                <a class="Addbtn">
-                    <i class="fa-solid fa-plus"></i>
-                </a>   
+                <div>
+                    <span>Quests</span>
+                </div>
+                <div>
+                    <a href="#" >
+                       
+                    </a>    
+                </div>
+                <div class="dropdown">
+                    <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-circle-user"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item text-center" href="#">
+                                <span>Name of the user</span>
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-gear"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
             </div>
-
-            <div class="mainbody">
-                <div class="dailyq">
-                    <div class="questtypes">
-                        <i class="fa-solid fa-bullseye"></i>
-                        <span>Daily Quest</span>
-                    </div>
-                   
-
-                    <ul class="questbox">
-                        <li>
-                            <button>
-                                <i class="fa-solid fa-check"></i>
-                            </button>
-                            <div class="questinfo">
-                                <div class="qtitle">
-                                    Daily Quest 1 
-                                </div>
-                                <div class="qinfo">
-                                    
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt viverra nisi quis sodales. Aliquam erat volutpat. Nulla elit nulla, scelerisque quis ultrices imperdiet, sollicitudin et ipsum. Ut consequat orci vehicula lacus laoreet tempor. Duis feugiat neque id leo egestas varius. Etiam molestie pharetra malesuada. Vestibulum purus dui, ultrices a tristique eget, ultrices in nisl. Mauris a nunc augue. Etiam ultrices lobortis viverra. Donec laoreet sapien at velit auctor suscipit. Ut tempus metus ut mollis dignissim. Nulla fermentum dui urna, nec tristique urna cursus lobortis. Quisque nisl neque, lacinia ut cursus quis, consectetur in mi.
-                                
-                                </div>
-                            </div>
-                            
-                        </li>
-                    </ul>
-
-                </div>
-
-                <div class="subq">
-                    <div class="questtypes">
-                        <i class="fa-solid fa-bullseye"></i>
-                        <span>Sub Quest</span>
-                    </div>
-                    
-                    <ul class="questbox">
-                        <li>
-                            <button>
-                                <i class="fa-solid fa-check"></i>
-                            </button>
-                            <div class="questinfo">
-                                <div class="qtitle">
-                                    Daily Quest 1 
-                                </div>
-                                <div class="qinfo">
-                                    
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt viverra nisi quis sodales. Aliquam erat volutpat. Nulla elit nulla, scelerisque quis ultrices imperdiet, sollicitudin et ipsum. Ut consequat orci vehicula lacus laoreet tempor. Duis feugiat neque id leo egestas varius. Etiam molestie pharetra malesuada. Vestibulum purus dui, ultrices a tristique eget, ultrices in nisl. Mauris a nunc augue. Etiam ultrices lobortis viverra. Donec laoreet sapien at velit auctor suscipit. Ut tempus metus ut mollis dignissim. Nulla fermentum dui urna, nec tristique urna cursus lobortis. Quisque nisl neque, lacinia ut cursus quis, consectetur in mi.
-                                
-                                </div>
-                            </div>
-                            
-                        </li>
-                    </ul>
-                    
-
-                </div>
-
-                <div class="mainq">
-                    <div class="questtypes">
-                        <i class="fa-solid fa-bullseye"></i>
-                        <span>Main Quest</span>
-                    </div>
-
-                    <ul class="questbox">
-                        <li>
-                            <button>
-                                <i class="fa-solid fa-check"></i>
-                            </button>
-                            <div class="questinfo">
-                                <div class="qtitle">
-                                    Daily Quest 1 
-                                </div>
-                                <div class="qinfo">
-                                    
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt viverra nisi quis sodales. Aliquam erat volutpat. Nulla elit nulla, scelerisque quis ultrices imperdiet, sollicitudin et ipsum. Ut consequat orci vehicula lacus laoreet tempor. Duis feugiat neque id leo egestas varius. Etiam molestie pharetra malesuada. Vestibulum purus dui, ultrices a tristique eget, ultrices in nisl. Mauris a nunc augue. Etiam ultrices lobortis viverra. Donec laoreet sapien at velit auctor suscipit. Ut tempus metus ut mollis dignissim. Nulla fermentum dui urna, nec tristique urna cursus lobortis. Quisque nisl neque, lacinia ut cursus quis, consectetur in mi.
-                                
-                                </div>
-                            </div>
-                            
-                        </li>
-                    </ul>
-                </div>
-
-
+            <div class="containerbotbtn">
+                <a href="">
+                    Add Entry
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
 
             </div>
 
