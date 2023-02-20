@@ -44,9 +44,7 @@ body{
 .mainnav-item{
     width: 100%;
 }
-.mainnav-item:last-child{
-    margin-top: auto;
-}
+
 .navactives{
     background-color: var(--m-bg-secondary);
 }

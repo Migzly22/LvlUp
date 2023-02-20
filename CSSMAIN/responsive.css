@@ -43,6 +43,22 @@
         line-height: 5rem;
     }
 
+    .containerbotbtn{
+        width: 100%;
+        padding: .5rem .5rem;    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*Containermain - contains all of the quest*/
+    .containermain{  
+        margin: 2rem 0 6rem 0;
+        grid-gap: 2rem;
+        padding: 0 2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (min-width:600px){
@@ -85,5 +101,23 @@
     .containertop{
         height: 5rem;
         line-height: 5rem;
+    }
+    .containerbotbtn{
+        padding: 1rem 1rem;    
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .containerbotbtn a{
+        margin-right: 1rem;
+    }
+
+    /*Containermain - contains all of the quest*/
+    .containermain{
+        margin: 1rem 0 ;
+        padding: 0 2rem;
+        grid-template-columns: 30% 30% 30%;    
+        grid-gap: 1rem;
+        justify-content: space-between;
     }
 }

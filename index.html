@@ -113,18 +113,131 @@
                             </a>
                         </li>
                     </ul>
-                  </div>
+                </div>
             </div>
             <div class="containerbotbtn">
-                <a href="">
+                <a href="" type="button" data-bs-toggle="modal" data-bs-target="#addentry">
                     Add Entry
                 </a>
-                <a href="">
-                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                </a>
+                <!-- Modal -->
+                <div class="modal fade" id="addentry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Quest Form</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="questtitle" placeholder="name@example.com">
+                                    <label for="questtitle">Quest Title</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                                      <option selected>Open this select menu</option>
+                                      <option value="DAILY">Daily Quest</option>
+                                      <option value="MAIN">Main Quest</option>
+                                      <option value="SUB">Sub Quest</option>
+                                    </select>
+                                    <label for="floatingSelect">Quest Type</label>
+                                  </div>
+                                <div class="form-floating mb-3">
+                                    <input type="date" class="form-control" id="questend" placeholder="name@example.com">
+                                    <label for="questend">Quest Duration</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" aria-label="With textarea" rows="4"></textarea>
+                                    <label for="questend">Quest Description</label>
+                                </div>
 
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save Entry</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown1">
+                    <a type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li class="text-center">
+                            <span>Show</span>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Main Quests
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Sub Quests
+                                </label>
+                              </div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Daily Quests
+                                </label>
+                              </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <div class="containermain">
+                <div class="quests">
+                    <div class="informations">
+                        <div class="title">
+                            <span>Title</span>
+                        </div>
+                        <div class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna in enim facilisis, ac semper justo aliquam. Aliquam maximus lorem fringilla tortor dignissim, in vehicula mauris pharetra. Aenean volutpat odio elit, non lacinia turpis semper sit amet. Pellentesque at suscipit tellus. Nunc id pharetra enim. Phasellus pellentesque urna massa, in facilisis leo convallis ac. Morbi pellentesque quam augue, in aliquet eros molestie at. Curabitur placerat porta gravida. Quisque sit amet placerat tellus, quis placerat diam. Phasellus varius velit ut quam maximus feugiat. Mauris accumsan, lectus at vehicula congue, magna velit bibendum eros, vel congue massa lorem a lorem. Quisque venenatis, lorem sit amet faucibus condimentum, massa nunc fermentum diam, vitae elementum nisl odio ac erat. Quisque lobortis laoreet malesuada. Nam pulvinar a libero ac posuere.
+                        </div>
+                    </div>
 
+                    <a class="questbtn">
+                        <i class="fa-solid fa-hourglass-end"></i>
+                    </a>
+                </div>
+                <div class="quests">
+                    <div class="informations">
+                        <div class="title">
+                            <span>Title</span>
+                        </div>
+                        <div class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna in enim facilisis, ac semper justo aliquam. Aliquam maximus lorem fringilla tortor dignissim, in vehicula mauris pharetra. Aenean volutpat odio elit, non lacinia turpis semper sit amet. Pellentesque at suscipit tellus. Nunc id pharetra enim. Phasellus pellentesque urna massa, in facilisis leo convallis ac. Morbi pellentesque quam augue, in aliquet eros molestie at. Curabitur placerat porta gravida. Quisque sit amet placerat tellus, quis placerat diam. Phasellus varius velit ut quam maximus feugiat. Mauris accumsan, lectus at vehicula congue, magna velit bibendum eros, vel congue massa lorem a lorem. Quisque venenatis, lorem sit amet faucibus condimentum, massa nunc fermentum diam, vitae elementum nisl odio ac erat. Quisque lobortis laoreet malesuada. Nam pulvinar a libero ac posuere.
+                        </div>
+                    </div>
+
+                    <a class="questbtn">
+                        <i class="fa-solid fa-hourglass-end"></i>
+                    </a>
+                </div>
+                <div class="quests">
+                    <div class="informations">
+                        <div class="title">
+                            <span>Title</span>
+                        </div>
+                        <div class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc posuere urna in enim facilisis, ac semper justo aliquam. Aliquam maximus lorem fringilla tortor dignissim, in vehicula mauris pharetra. Aenean volutpat odio elit, non lacinia turpis semper sit amet. Pellentesque at suscipit tellus. Nunc id pharetra enim. Phasellus pellentesque urna massa, in facilisis leo convallis ac. Morbi pellentesque quam augue, in aliquet eros molestie at. Curabitur placerat porta gravida. Quisque sit amet placerat tellus, quis placerat diam. Phasellus varius velit ut quam maximus feugiat. Mauris accumsan, lectus at vehicula congue, magna velit bibendum eros, vel congue massa lorem a lorem. Quisque venenatis, lorem sit amet faucibus condimentum, massa nunc fermentum diam, vitae elementum nisl odio ac erat. Quisque lobortis laoreet malesuada. Nam pulvinar a libero ac posuere.
+                        </div>
+                    </div>
+
+                    <a class="questbtn">
+                        <i class="fa-solid fa-hourglass-end"></i>
+                    </a>
+                </div>
+            </div>
             
         </main>
 

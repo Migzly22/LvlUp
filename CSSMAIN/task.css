@@ -15,11 +15,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1rem ;
+    z-index: 5;
+    position: relative;
 }
 .containertop span{
     font-size: 1.5rem;
 }
-
 
 .dropdown a i{
     margin: 0;
@@ -29,6 +30,7 @@
     border: 1px solid var(--m-bg-main);
 
 }
+
 .dropdown-item{
     height: 2rem;
     max-width: 20rem;
@@ -39,18 +41,11 @@
     font-size: .9rem;
 }
 
-.containerbotbtn{
-    width: 100%;
-    padding: 1rem 1rem;    
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
+
 .containerbotbtn a{
     border: 1px solid red;
     padding: .5rem;
     border-radius: .5rem;
-    margin-right: 1rem;
     text-decoration: none;
     font-size: 1rem;
     color: black;
@@ -58,5 +53,114 @@
 }
 
 .containerbotbtn a:hover{
+    background-color:var(--m-text-main);
+}
+
+.dropdown1 .dropdown-menu{
+    padding: .5rem;
+}
+.dropdown1 .dropdown-menu li > span{
+    font-weight: bold;
+}
+
+/*Modal*/
+.modal-header, .modal-footer{
+    background-color: var(--m-text-main);
+    border: 0px;
+}
+.modal-body{
+    background-color: var(--m-bg-secondary);
+    border-top: 1px solid var(--m-bg-main);
+    border-bottom: 1px solid var(--m-bg-main);
+}   
+.modal-footer button{
+    background-color: var(--m-bg-main);
+    border: 0;
+}
+.modal-footer button:hover{
+    background-color: var(--m-bg-secondary);
+    color:var(--m-bg-main);
+}
+textarea{
+    resize: none;
+    height: 5rem;
+}
+textarea::-webkit-scrollbar{
+    width: .1rem;
+}
+
+textarea.form-control{
+    min-height: 9rem;    
+}
+
+
+
+
+
+/*Containermain - contains all of the quest*/
+.containermain{
+
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+}
+.quests{
+    width: 100%;
     border: 1px solid var(--m-bg-main);
+    padding: .8rem;
+    border-radius: 1rem;
+
+    position: relative;
+
+    /* From https://css.glass */
+    background: rgba(100, 92, 187, 0.53);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+}
+
+.questbtn{
+    background:var(--m-text-secondary);
+    padding: .5rem;
+    height: 3rem;
+    width: 3rem;
+    line-height: 2rem;
+    border: 2px solid var(--m-text-main);
+    border-radius: 50%;
+    text-align: center;
+
+    text-decoration: none;
+    color: black;
+
+
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.questbtn i{
+    margin: 0;
+    padding: 0;
+}
+.questbtn:hover{
+    background-color: var(--m-bg-secondary);
+}
+
+.title span{
+    font-weight: bold;
+    letter-spacing: 0.3ch;
+}
+.title, .desc{
+    overflow: hidden;
+}
+.desc{
+    min-height: 5rem;
+    max-height: 5rem;
+
+    text-align: justify;    
+}
+.desc:hover{
+  
 }
